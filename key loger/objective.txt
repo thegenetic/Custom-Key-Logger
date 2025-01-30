@@ -1,0 +1,46 @@
+1. Basic Key Logger to Capture Keystrokes
+Objective: Capture all keystrokes and save them to a text file.
+Steps:
+- Use the pynput library’s keyboard.Listener to capture keystrokes.
+- Set up a simple function to record each keystroke.
+- Write each keystroke to a local text file as they’re typed.
+- Test by running the script and verifying that it logs the keystrokes to the text file.
+New Skills: Working with listeners, file I/O for storing logs.
+
+2. Capture Special Keys and Format Output
+Objective: Make the keylogger more readable by distinguishing between letters, numbers, and special keys.
+Steps:
+- Add logic to recognize special keys (e.g., Enter, Backspace, Space).
+- Format the output to display special keys like [ENTER] or [SPACE] instead of just logging raw keystrokes.
+- Update the file output to include timestamped entries.
+New Skills: Handling key events more selectively and creating more organized logs.
+
+3. Email Keystrokes (Basic Email Logging)
+Objective: Send logged keystrokes to an email address at intervals.
+Steps:
+- Set up a function to send emails using Python’s smtplib.
+- Collect keystrokes in memory and send them every few minutes.
+- Use threading or timed intervals to manage email frequency.
+New Skills: Sending emails in Python, handling data over timed intervals, and managing memory.
+
+4. Stealth Mode (Run as Background Process)
+Objective: Make the keylogger run in the background.
+Steps:
+- Configure the keylogger to run as a minimized or hidden process.
+- Set it up to run on startup if you’re on your local machine (be careful with this on personal systems).
+- Test it by confirming that it logs data while minimized or hidden.
+New Skills: Background processing, managing Python scripts on system startup.
+
+5. Encrypt and Decrypt Keystroke Logs
+Objective: Add basic encryption to the saved logs for additional security.
+Steps:
+- Use a library like cryptography to encrypt and decrypt log files.
+- Encrypt keystrokes before saving them, and create a separate script to decrypt logs.
+New Skills: Basic encryption and decryption, file security.
+
+6. Add Network Transmission (Advanced)
+Objective: Capture keystrokes and send them to a remote server.
+Steps:
+- Set up a server that can receive and store data (using Flask or Django, for example).
+- Use Python’s requests library to send keystrokes to the server at intervals.
+New Skills: Network communication in Python, basic server setup for logging.
