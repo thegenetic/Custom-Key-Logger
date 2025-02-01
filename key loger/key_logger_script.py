@@ -25,10 +25,10 @@ def send_mail(filename):
     HOST = "smtp.gmail.com"
     PORT = 587
 
-    FROM_EMAIL = "thegenetic04@gmail.com"
-    TO_EMAIL = "thegenetic00@proton.me"
+    FROM_EMAIL = "fromemail@gmail.com"
+    TO_EMAIL = "toemail@gmail.com"
 
-    PASSWORD = "ergb mimw pfdb wqdo"
+    PASSWORD = "password here"
 
     SUBJECT = "Mail sent using python!"
     MESSAGE = """
